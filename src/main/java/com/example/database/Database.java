@@ -74,11 +74,28 @@ public class Database {
             return null;
         }
     }
-    public boolean addUser(String name,String ){
+    private String getId(){
+        int id = 10001;
         try{
-            stml.executeQuery("SELECT * FROM USERS;");
+            ResultSet values = stml.executeQuery("SELECT * FROM USERS;");
+            while(values.next()){
+                id+=1;
+            }
+            return Integer.toString(id);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            System.exit(1);
+            return null;
         }
-        return false;
+    }
+    public boolean addUser(String name,String email,String password){
+        try{
+            String id = this.getId();
+            stml.executeQuery(String.format("Insert into users values('%s','%s','%s','%s')",id,name,email,password));
+            return true;
+        }catch(Exception e){
+            return false;
+        }
     }
     public void closeConnection(){
         try{
