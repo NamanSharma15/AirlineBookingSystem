@@ -91,10 +91,27 @@ public class Database {
     public boolean addUser(String name,String email,String password){
         try{
             String id = this.getId();
-            stml.executeQuery(String.format("Insert into users values('%s','%s','%s','%s')",id,name,email,password));
+            System.out.println(id);
+            String query = String.format("Insert into users values('%s','%s','%s','%s');",id,name,email,password);
+            stml.executeUpdate(query);
+            c.commit();
             return true;
         }catch(Exception e){
             return false;
+        }
+    }
+    public User getUser(String email){
+        try{
+            String query = String.format("Select * from users where email = '%s'",email);
+            ResultSet res = stml.executeQuery(query);
+            User user = new User(
+                res.getString(1),
+                res.getString(2),
+                res.getString(3),
+                res.getString(4));
+            return user;
+        }catch(Exception e){
+            return null;
         }
     }
     public void closeConnection(){

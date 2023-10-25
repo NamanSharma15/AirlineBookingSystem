@@ -2,5 +2,6 @@ com\example\auth\Signup.class
 com\example\App.class
 com\example\database\Database.class
 com\example\schemas\Flight.class
+com\example\auth\Auth.class
 com\example\schemas\User.class
 com\example\auth\Login.class
