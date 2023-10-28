@@ -1,0 +1,15 @@
+
+--------------------------------------
+        Ticket for CX 698
+--------------------------------------
+
+Name : Test
+Email : Test@gmail
+Ticket No : T1001
+Destination : Hong Kong
+Class : Economy Class
+Booking Date : 2023-10-28
+Booking Time : 23:09:54
+Flight Time : 22:40
+
+--------------------------------------
