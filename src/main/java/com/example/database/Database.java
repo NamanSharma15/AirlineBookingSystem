@@ -2,6 +2,7 @@ package com.example.database;
 import java.sql.*;
 import com.example.schemas.User;
 import com.example.schemas.Flight;
+import com.example.schemas.Ticket;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -91,7 +92,6 @@ public class Database {
     public boolean addUser(String name,String email,String password){
         try{
             String id = this.getId();
-            System.out.println(id);
             String query = String.format("Insert into users values('%s','%s','%s','%s');",id,name,email,password);
             stml.executeUpdate(query);
             c.commit();
@@ -113,6 +113,9 @@ public class Database {
         }catch(Exception e){
             return null;
         }
+    }
+    public void addTicket(Ticket ticket,String uid,String fid){
+        String query = String.format("Insert into ", null);
     }
     public void closeConnection(){
         try{

@@ -1,0 +1,6 @@
+Select the Action you want to perform:
+1. Book Ticket
+2. Apply for a Boarding Pass
+3. Cheak Flights Details
+4. Check History
+0. Exit
