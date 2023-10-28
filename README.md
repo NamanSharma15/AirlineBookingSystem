@@ -27,13 +27,13 @@ Airline Booking System is a Prototype that uses Java and SQLITE to implement fea
 ## Execution Command
 
 Use the following command to execute the package for testing purposes
-#### `mvn package exec:java -D"exec.mainClass"="com.example.App"`
+#### ```mvn package exec:java -D"exec.mainClass"="com.example.App"```
 
 ## Compile Command
 
 Use the following command to compile the application code in jar format *(needed for dependencies)*
-#### `mvn clean compile assembly:single`
+#### ```mvn clean compile assembly:single```
 
 ## Run Command
 After compiling the code to jar using above command you can run it
-#### `java -jar .\target\air-1.0-jar-with-dependencies.jar` 
+#### ```java -jar .\target\air-1.0-jar-with-dependencies.jar```
