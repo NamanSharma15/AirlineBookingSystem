@@ -13,7 +13,6 @@ public class Database {
     try {
          Class.forName("org.sqlite.JDBC");
          c = DriverManager.getConnection("jdbc:sqlite:Airline.db");
-         System.out.println("Opened database successfully");
          c.setAutoCommit(false);
          stml = c.createStatement();
       } 
@@ -89,6 +88,20 @@ public class Database {
             return null;
         }
     }
+    public String getTicketNo(){
+        int id = 1001;
+        try{
+            ResultSet values = stml.executeQuery("Select * from tickets;");
+            while(values.next()){
+                id+=1;
+            }
+            return "T"+Integer.toString(id);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+            System.exit(1);
+            return "";
+        }
+    }
     public boolean addUser(String name,String email,String password){
         try{
             String id = this.getId();
@@ -114,12 +127,26 @@ public class Database {
             return null;
         }
     }
-    public void addTicket(Ticket ticket,String uid,String fid){
-        String query = String.format("Insert into ", null);
+    public boolean addTicket(Ticket ticket,String uid,String fid){
+        String query = String.format("Insert into tickets values('%s','%s','%s','%s','%s','%s')",
+        ticket.ticket_no ,
+        ticket.time_of_booking,
+        ticket.class_,
+        ticket.date,
+        uid,
+        fid);
+        try{
+            stml.executeUpdate(query);
+            c.commit();
+            return true;
+        }catch(Exception e){
+            return false;
+        }
     }
     public void closeConnection(){
         try{
             stml.close();
+            c.commit();
             c.close();
         }catch(Exception e){
             System.out.println(e);

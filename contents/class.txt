@@ -1,0 +1,4 @@
+Select your preffered class for the flight.
+1 - First class
+2 - Business Class
+3 - Economy Class

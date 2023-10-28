@@ -7,7 +7,7 @@ Airline Booking System is a Prototype that uses Java and SQLITE to implement fea
 **To get started working with this project you first need to setup the following things:**
 
 ### Maven Setup
-* Install the latest Maven version for your system from the [<u>official website</u>](https://maven.apache.org/download.cgi) 
+* Install the latest Maven version for your system from the [<u>following website</u>](https://maven.apache.org/download.cgi) 
 
 * Save the `maven` directory in the `C:/Program Files` directory
 
@@ -20,25 +20,27 @@ Airline Booking System is a Prototype that uses Java and SQLITE to implement fea
 
 * Unzip the contents of the zip file in the `C:/Program Files`
 
-* Add the `root` directory to Enviroment Variables containing the `sqlite3.exe` filed
+* Add the `root` directory to Enviroment Variables that contains the `sqlite3.exe` file
 
 * Restart your pc
 
-## Execution Command
+## Execution 
+
+### Testing Command
 
 Use the following command to execute the package for testing purposes
  ```
  mvn package exec:java -D"exec.mainClass"="com.example.App"
  ```
 
-## Compile Command
+### Compile Command
 
-Use the following command to compile the application code in jar format *(needed for dependencies)*
+Use the following command to compile the application code in jar format *(needed for external dependencies)*
  ```
  mvn clean compile assembly:single
  ```
 
-## Run Command
+### Run Command
 After compiling the code to jar using above command you can run it
  ```
  java -jar .\target\air-1.0-jar-with-dependencies.jar

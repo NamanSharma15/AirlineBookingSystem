@@ -1,0 +1,15 @@
+
+--------------------------------------
+        Ticket for -flight_no-
+--------------------------------------
+
+Name : -name-
+Email : -email-
+Ticket No : -ticket_no-
+Destination : -destination-
+Class : -class-
+Booking Date : -booking_date-
+Booking Time : -booking_time-
+Flight Time : -flight_time-
+
+--------------------------------------

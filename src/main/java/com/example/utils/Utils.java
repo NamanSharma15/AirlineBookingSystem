@@ -3,8 +3,8 @@ import java.io.*;
 import java.nio.file.Paths;
 
 public class Utils {
+    static String dir_path = Paths.get(".").toAbsolutePath().normalize().toString();
     public static String getFileContents(String filename){
-        String dir_path = Paths.get(".").toAbsolutePath().normalize().toString();
         String filepath = String.format("%s//contents//%s",dir_path,filename);
         File file = new File(filepath);
         try{
@@ -22,4 +22,15 @@ public class Utils {
             return "";
         }
     } 
+    public static void createTextFile(String filename,String folder,String content){
+        String filepath = String.format("%s//out//%s//%s",dir_path,folder,filename);
+        try{
+            FileWriter file = new FileWriter(filepath);
+            file.write(content);
+            file.close();
+        }catch(IOException e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }

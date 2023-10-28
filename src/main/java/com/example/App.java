@@ -24,8 +24,7 @@ public class App
         User user = authentication.user;
         // getFlights
         flights = database.getFlights();
-        String instuctions = Utils.getFileContents("instructions.txt");
-        System.out.println(instuctions);
+        System.out.println(Utils.getFileContents("instructions.txt"));
         while(iter_loop){
             System.out.println("Enter your choice:");
             int input = sc.nextInt();
@@ -65,6 +64,9 @@ public class App
         authentication.onInit(sc,database);
         if(authentication.user!=null){
             System.out.println("You are Signin as "+authentication.user.name);
+        }else{
+            System.out.println("User Doesnt exists");
+            return userAuthentication(sc, database);
         }
         return authentication;
     }
