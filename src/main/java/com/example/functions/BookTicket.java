@@ -89,7 +89,6 @@ interface BookTicket {
         }
         return classes[val-1];
     }
-
     static int intInput(Scanner sc) {
         String selection = sc.nextLine();
         int val = 0;
