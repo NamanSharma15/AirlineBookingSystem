@@ -10,4 +10,12 @@ public class Ticket {
         this.class_ = class_;
         this.date = date;
     }
+    public Ticket(String ticket_no, String time_of_booking, String class_, String date,User user,Flight flight){
+        this.ticket_no = ticket_no;
+        this.time_of_booking = time_of_booking;
+        this.class_ = class_;
+        this.date = date;
+        this.flight  = flight;
+        this.user = user;
+    }
 }

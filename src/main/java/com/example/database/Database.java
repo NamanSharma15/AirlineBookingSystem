@@ -127,6 +127,24 @@ public class Database {
             return null;
         }
     }
+    public Flight getFlight(String flight_no){
+        try{
+            String query = String.format("Select * from airline where Flight_No = '%s'", flight_no);
+            ResultSet values = stml.executeQuery(query);
+            Flight flight = new Flight(
+                      values.getString(1),
+                      values.getString(2),
+                      values.getString(3),
+                      values.getString(4),
+                      values.getString(5),
+                      values.getString(6));
+            return flight;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            System.exit(1);
+            return null;
+        }
+    }
     public boolean addTicket(Ticket ticket,String uid,String fid){
         String query = String.format("Insert into tickets values('%s','%s','%s','%s','%s','%s')",
         ticket.ticket_no ,
@@ -141,6 +159,34 @@ public class Database {
             return true;
         }catch(Exception e){
             return false;
+        }
+    }
+    private String flightByTicket(String ticket_no){
+        try{
+            String query = String.format("Select fid from tickets where id = '%s'", ticket_no);
+            ResultSet values = stml.executeQuery(query);
+            return values.getString(1);
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            System.exit(1);
+            return null;
+        }
+    }
+    public Ticket getTicket(String ticket_no,User user){
+        try{
+            String query = String.format("Select from tickets where id = '%s'", ticket_no); 
+            ResultSet res = stml.executeQuery(query);
+            Ticket ticket = new Ticket(
+                res.getString(1),
+                res.getString(2),
+                res.getString(3),
+                res.getString(4),
+                user,getFlight(flightByTicket(ticket_no)));
+            return ticket;
+        }catch(SQLException e){
+            System.out.println(e.getMessage());
+            System.exit(1);
+            return null;
         }
     }
     public void closeConnection(){
