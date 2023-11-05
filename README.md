@@ -30,7 +30,7 @@ Airline Booking System is a Prototype that uses Java and SQLITE to implement fea
 
 ### File Structure
 
-![not found](/images/files.png)
+![not found](https://i.ibb.co/ggyVy3X/files.png)
 
 #### **Main App Directory (src/main/java/com/example)**
 
