@@ -10,6 +10,5 @@ Destination : -destination-
 Class : -class-
 Booking Date : -booking_date-
 Booking Time : -booking_time-
-Flight Time : -flight_time-
 
 --------------------------------------

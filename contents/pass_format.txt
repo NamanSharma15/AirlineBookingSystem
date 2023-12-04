@@ -1,0 +1,15 @@
+
+--------------------------------------
+             Boarding Pass
+--------------------------------------
+
+Passenger Name:  -name-
+Flight Number: -flight_no-
+Flight Date: -date-
+Flight Time : -time-
+To :  -destination-
+Gate No.  : -gate-
+Class : -class-
+Seat: -seat-
+
+--------------------------------------

@@ -1,0 +1,14 @@
+
+--------------------------------------
+        Ticket for EK 515
+--------------------------------------
+
+Name : DD
+Email : ff@123
+Ticket No : T1002
+Destination : Dubai
+Class : Economy Class
+Booking Date : 2023-11-05
+Booking Time : 21:55:41
+
+--------------------------------------

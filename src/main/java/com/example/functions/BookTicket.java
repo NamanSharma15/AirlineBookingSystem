@@ -1,17 +1,16 @@
 package com.example.functions;
 import java.time.LocalTime;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import com.example.database.Database;
 import com.example.schemas.Flight;
 import com.example.schemas.Ticket;
 import com.example.schemas.User;
+import com.example.structures.Flights;
 import com.example.utils.Utils;
 
 interface BookTicket {
-    default void bookTicket(User user, List<Flight> flights, Database database, Scanner sc) {
+    default void bookTicket(User user, Flights flights, Database database, Scanner sc) {
         boolean found = false;
         String searchString;
         int first = 1;
@@ -24,24 +23,23 @@ interface BookTicket {
                 searchString = sc.nextLine();
                 first = 0;
             }
-            List<Flight> result = new ArrayList<Flight>();
-            for (Flight f : flights) {
-                if (f.destination.contains(searchString)) {
-                    result.add(f);
+            Flights result = new Flights(300);
+            for (int i=0;i<flights.i;i++) {
+                if (flights.get(i).destination.contains(searchString)) {
+                    result.add(flights.get(i));
                 }
             }
-            for (int i = 0; i < result.size(); i++) {
+            for (int i = 0; i < result.i; i++) {
                 System.out.print(Integer.toString(i + 1) + " - ");
-                System.out
-                        .println(result.get(i).flight_no + " " + result.get(i).destination + " " + result.get(i).time);
+                System.out.println(result.get(i).flight_no + " " + result.get(i).destination + " " + result.get(i).time);
             }
-            if (result.size() == 0) {
+            if (result.i == 0) {
                 System.out.println("No flight Available for the search input");
                 continue;
             }
             System.out.println("Enter the index number to select destination \n or Enter 0 to search again: ");
             int index_flight = intInput(sc);
-            if (index_flight <= 0 || result.size() == 0) {
+            if (index_flight <= 0 || result.i == 0) {
                 continue;
             }
             flight = result.get(index_flight - 1);
@@ -75,7 +73,6 @@ interface BookTicket {
         text = text.replace("-class-",ticket.class_);
         text = text.replace("-booking_date-",ticket.date);
         text = text.replace("-booking_time-",ticket.time_of_booking);
-        text = text.replace("-flight_time-",flight.time);
         return text;
     }
     static String getClass(Scanner sc) {
@@ -97,7 +94,7 @@ interface BookTicket {
             try {
                 val = Integer.parseInt(selection);
                 is_valid = true;
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Enter a valid response");
                 selection = sc.nextLine();
             }

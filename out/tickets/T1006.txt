@@ -1,0 +1,14 @@
+
+--------------------------------------
+        Ticket for AI 929
+--------------------------------------
+
+Name : svc
+Email : gdn
+Ticket No : T1006
+Destination : Dubai
+Class : First class
+Booking Date : 2023-11-08
+Booking Time : 10:07:54
+
+--------------------------------------

@@ -1,0 +1,14 @@
+
+--------------------------------------
+        Ticket for AI 929
+--------------------------------------
+
+Name : hhh
+Email : gf
+Ticket No : T1005
+Destination : Dubai
+Class : First class
+Booking Date : 2023-11-08
+Booking Time : 01:16:01
+
+--------------------------------------

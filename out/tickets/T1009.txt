@@ -1,0 +1,14 @@
+
+--------------------------------------
+        Ticket for AI 213
+--------------------------------------
+
+Name : Robin
+Email : Robin@123
+Ticket No : T1009
+Destination : Kathmandu
+Class : Business Class
+Booking Date : 2023-12-04
+Booking Time : 19:00:30
+
+--------------------------------------

@@ -15,6 +15,8 @@ public class Signup extends Auth{
     }
     private void newUser(){
         this.is_Authenticated = this.database.addUser(this.name, this.email, this.password);
-        this.user = this.database.getUser(this.email);
+        if(this.is_Authenticated){
+            this.user = this.database.getUser(this.email);
+        }
     }
 }

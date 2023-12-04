@@ -1,0 +1,14 @@
+
+--------------------------------------
+        Ticket for FZ 432
+--------------------------------------
+
+Name : KKK
+Email : 123@33
+Ticket No : T1003
+Destination : Dubai
+Class : Business Class
+Booking Date : 2023-11-06
+Booking Time : 14:56:58
+
+--------------------------------------

@@ -1,0 +1,15 @@
+
+--------------------------------------
+             Boarding Pass
+--------------------------------------
+
+Passenger Name:  Robin
+Flight Number: AI 213
+Flight Date: 2023-12-04
+Flight Time : 07:00
+To :  Kathmandu
+Gate No.  : 7B
+Class : Business Class
+Seat: B17A
+
+--------------------------------------

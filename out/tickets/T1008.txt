@@ -1,0 +1,14 @@
+
+--------------------------------------
+        Ticket for AI 213
+--------------------------------------
+
+Name : Naman Sharma
+Email : Ns1501@gmail.com
+Ticket No : T1008
+Destination : Kathmandu
+Class : Business Class
+Booking Date : 2023-12-04
+Booking Time : 18:46:56
+
+--------------------------------------

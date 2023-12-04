@@ -1,0 +1,15 @@
+
+--------------------------------------
+             Boarding Pass
+--------------------------------------
+
+Passenger Name:  Naman Sharma
+Flight Number: AI 161
+Flight Date: 2023-12-03
+Flight Time : 02:40
+To :  London Heathrow
+Gate No.  : 11
+Class : Business Class
+Seat: B02A
+
+--------------------------------------

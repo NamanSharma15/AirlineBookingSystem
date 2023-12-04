@@ -1,0 +1,14 @@
+
+--------------------------------------
+        Ticket for AI 161
+--------------------------------------
+
+Name : Naman Sharma
+Email : Ns1501@gmail.com
+Ticket No : T1004
+Destination : London Heathrow
+Class : Business Class
+Booking Date : 2023-11-06
+Booking Time : 19:14:56
+
+--------------------------------------

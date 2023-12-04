@@ -3,4 +3,5 @@ Select the Action you want to perform:
 2. Apply for a Boarding Pass
 3. Check Flights Details
 4. Check History
+5. Signout
 0. Exit

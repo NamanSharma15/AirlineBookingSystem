@@ -1,0 +1,14 @@
+
+--------------------------------------
+        Ticket for AI 929
+--------------------------------------
+
+Name : tfy
+Email : vty
+Ticket No : T1007
+Destination : Dubai
+Class : First class
+Booking Date : 2023-11-08
+Booking Time : 12:24:52
+
+--------------------------------------

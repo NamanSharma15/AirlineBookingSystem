@@ -16,7 +16,7 @@ public class Utils {
             }
             reader.close();
             return output;
-        }catch(Exception e){
+        }catch(IOException e){
             System.out.println(e.getMessage());
             System.exit(1);
             return "";

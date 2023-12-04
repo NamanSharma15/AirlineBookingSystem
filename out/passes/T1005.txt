@@ -1,0 +1,15 @@
+
+--------------------------------------
+             Boarding Pass
+--------------------------------------
+
+Passenger Name:  hhh
+Flight Number: AI 929
+Flight Date: 2023-11-20
+Flight Time : 07:10
+To :  Dubai
+Gate No.  : 11
+Class : First class
+Seat: F23A
+
+--------------------------------------

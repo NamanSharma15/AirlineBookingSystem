@@ -10,6 +10,5 @@ Destination : Hong Kong
 Class : Economy Class
 Booking Date : 2023-10-28
 Booking Time : 23:09:54
-Flight Time : 22:40
 
 --------------------------------------
